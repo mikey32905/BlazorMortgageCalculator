@@ -8,10 +8,9 @@ pushd /tmp
 wget https://dot.net/v1/dotnet-install.sh
 
 # Make the script executable
-chmod +x ./dotnet-install.sh
+chmod u+x /tmp/dotnet-install.sh
 
-# Install .NET 8 (modify channel if needed in the future)
-./dotnet-install.sh --channel 8.0
+/tmp/dotnet-install.sh --channel 8.0
 
 # Return to project directory
 popd
